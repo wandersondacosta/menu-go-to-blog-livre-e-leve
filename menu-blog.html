@@ -5,24 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="/wp-content/themes/backpacktraveler/assets/css/storie-menu-mobile-min.css">
-    <title>menu dropdown</title>
+    <link rel="stylesheet" href="style/menu-blog.css">
+    <title>Document</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <h1 class="logo">teste</h1>
-
-
-        <ul class="conteiner__menu">
-            <li class="conteiner__loja">
-                <img src="https://lojalivreeleve.vteximg.com.br/arquivos/shopping-bag-2.svg" alt="Loja"
-                    class="conteiner__loja-icone" width="30px" height="30px">
+    <header>
+        
+            <div class="conteiner__loja">
+                <span class="conteiner__open-market">loja</span>
                 <ul class="conteiner__sub-menu">
-                    <li class="conteiner__sub-menulia conteiner__close-loja"><span
-                            class="conteiner__close-loja2">x</span></li>
                     <li class="conteiner__sub-menuli">
                         <a href="https://www.livreeleve.com.br/novidades" class="conteiner__sub-menulia"
                             title="novidades">novidades</a>
@@ -40,7 +33,7 @@
                                 </li>
 
                                 <li class="conteiner__submenuli02">
-                                    <a href="https://www.livreeleve.com.br/roupas-fitness/body-fitness?O=OrderByScoreDESC"
+                                    <a href="https://www.livreeleve.com.br/roupas-fitness/body-fitness?O=OrderByScoreDESC" class="conteiner__submenua"
                                         title="body">body</a>
                                 </li>
 
@@ -76,7 +69,7 @@
 
                                 <li class="conteiner__submenuli02">
                                     <a href="https://www.livreeleve.com.br/roupas-fitness?O=OrderByScoreDESC"
-                                        title="ver tudo">ver tudo</a>
+                                        title="ver tudo" class="coteiner__tudo">ver tudo</a>
                                 </li>
                             </div>
                             <div class="conteiner__separator">
@@ -132,7 +125,7 @@
                                 </li>
 
                                 <li class="conteiner__submenuli02">
-                                    <a href="https://www.livreeleve.com.br/moda-praia" title="ver tudo">ver tudo</a>
+                                    <a href="https://www.livreeleve.com.br/moda-praia" title="ver tudo" class="coteiner__tudo">ver tudo</a>
                                 </li>
                             </div>
                             <div class="conteiner__separator">
@@ -198,67 +191,10 @@
                             title="liquida">liquida</a>
                     </li>
                 </ul>
-            </li>
-        </ul>
-
+            </div>
+        <h1>menu</h1>
     </header>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script>
 
-        
-
-        jQuery(".conteiner__loja-icone").click(function () {
-            jQuery(".conteiner__sub-menu").toggleClass("conteiner__sub-menu--active")
-            jQuery("html").toggleClass("scroll__locked")
-
-        })
-
-        jQuery(".conteiner__close-loja").click(function () {
-            jQuery(".conteiner__sub-menu").toggleClass("conteiner__sub-menu--active")
-            jQuery("html").toggleClass("scroll__locked")
-
-            jQuery('.conteiner__submenu02').each(function (ind, element) {
-
-                jQuery(element).slideUp()
-
-            });
-
-        })
-
-        jQuery(".conteiner__sub-menuli").each(function (index, elem) {
-            if (jQuery(elem).find('.conteiner__submenu02').length > 0) {
-                jQuery(elem).find(">a").click(function (event) {
-                    event.preventDefault();
-
-                    jQuery('.conteiner__submenu02').each(function (ind, element) {
-                        if (element !== jQuery(elem).find('.conteiner__submenu02')[0]) {
-                            jQuery(element).slideUp()
-                        }
-                    });
-                    jQuery(elem).find('.conteiner__submenu02').slideToggle();
-                })
-            }
-        })
-    </script>
-
-    <script>
-        const scroll = document.querySelector('html');
-        const conteiner = document.querySelector('.conteiner__loja-icone');
-
-        function tiraScroll() {
-            scroll.style.overflowY = 'hidden'
-        }
-
-        conteiner.addEventListener('click', function () {
-            tiraScroll()
-        })
-
-    </script>
-
-
-
-    <script src="/wp-content/themes/backpacktraveler/assets/js/storie-menu-mobile.js"></script>
 </body>
 
-</html
+</html>

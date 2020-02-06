@@ -1,0 +1,142 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: red;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #cecece;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+
+  .conteiner__loja {
+    height: 70px;
+
+    .conteiner__open-market {
+      padding: 10px;
+      font-size: 14px;
+      margin: 0 10px;
+      line-height: 70px;
+    }
+
+    .conteiner__open-market::before {
+      content: "";
+      background-image: url(https://lojalivreeleve.vteximg.com.br/arquivos/shopping-bag-2.svg);
+      background-size: cover;
+      background-position: center;
+      height: 12px;
+      width: 11px;
+      top: 28px;
+      left: 6px;
+      position: absolute;
+    }
+
+    .conteiner__sub-menu {
+      position: absolute;
+      visibility: hidden;
+      width: 100%;
+      opacity: 0;
+      background-color: #fff;
+      transition: opacity 0.2s ease-out;
+      border-bottom: 1px solid #cecece;
+
+      .conteiner__sub-menuli {
+        display: flex;
+        justify-content: space-between;
+
+        .conteiner__sub-menulia {
+          display: flex;
+          justify-content: space-between;
+          padding: 28px 20px;
+          margin: 0 20px;
+          text-decoration: none;
+          color: black;
+        }
+
+        .conteiner__submenu02 {
+          padding: 12px;
+          visibility: hidden;
+          transition: opacity 0.4s;
+          border-left: 1px solid #cecece;
+          position: absolute;
+          left: 180px;
+          height: auto;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: opacity 0.4s linear;
+
+          .conteiner__separator {
+            position: relative;
+            float: left;
+            padding: 0px 15px;
+            margin: 0 25px;
+
+            .conteiner__separator-title {
+              font-weight: bold;
+              padding: 7px 15px;
+              text-transform: uppercase;
+              color: #888;
+              font-size: 14px;
+            }
+
+            .conteiner__submenuli02 {
+              display: flex;
+
+              a {
+                padding: 7px 15px;
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                margin-top: 6px;
+              }
+
+              a:hover {
+                text-decoration: underline;
+              }
+
+              .coteiner__tudo {
+                text-decoration: underline;
+                font-weight: 700;
+                padding: 0;
+                margin: 6px 15px;
+              }
+            }
+          }
+        }
+      }
+      .conteiner__sub-menuli:hover > .conteiner__submenu02 {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  .conteiner__loja:hover > .conteiner__sub-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .conteiner__loja:not(:hover) > .conteiner__sub-menu {
+    position: absolute;
+      visibility: hidden;
+      width: 100%;
+      opacity: 0;
+      background-color: #fff;
+      transition: 0.2s ease-out;
+      border-bottom: 1px solid #cecece;
+  }
+  
+}
