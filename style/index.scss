@@ -20,13 +20,13 @@
       a {
         text-decoration: none;
         color: #565050;
+        font-family: Montserrat !important;
       }
 
       .Mconteiner__sub-menu {
         background: #ffffff;
-        height: 100%;
+        height: 100vh;
         position: absolute;
-        top: 39px;
         width: 100%;
         right: 0;
         transform: translateX(101%);
@@ -64,12 +64,13 @@
           justify-content: center;
           align-items: center;
           padding: 17px 0;
-          font-size: 15px;
+          font-size: 13px;
           text-align: center;
           text-transform: uppercase;
           border-bottom: 1px solid #e4e4e4;
           text-decoration: none;
           color: #565050;
+          font-family: Montserrat !important;
         }
 
         .Mconteiner__submenu02 {
