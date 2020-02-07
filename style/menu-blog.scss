@@ -11,6 +11,25 @@ body {
   background-color: red;
 }
 
+.header__divided-focus{
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    top: 70px;
+    opacity: 0.6;
+    transition: all 0.2s ease-out;
+    transition-delay: 0;
+}
+
+.active--focus{
+  visibility: visible;
+}
+
+
+
 header {
   width: 100%;
   height: 70px;
@@ -20,14 +39,24 @@ header {
   align-items: center;
   background-color: white;
 
+
+  
+
   .conteiner__loja {
     height: 70px;
+    margin-left: 15px;
+    
+    a{
+      font-family: Montserrat !important;
+    }
 
     .conteiner__open-market {
       padding: 10px;
       font-size: 14px;
       margin: 0 10px;
       line-height: 70px;
+      margin-left: 15px;
+      font-family: Montserrat !important;
     }
 
     .conteiner__open-market::before {
@@ -43,63 +72,64 @@ header {
     }
 
     .conteiner__sub-menu {
-      position: absolute;
+      position: fixed;
       visibility: hidden;
       width: 100%;
       opacity: 0;
+      left: 0;
       background-color: #fff;
       transition: opacity 0.2s ease-out;
       border-bottom: 1px solid #cecece;
+      border-top: 1px solid #e4e4e4;
+      margin: 0;
 
       .conteiner__sub-menuli {
         display: flex;
-        justify-content: space-between;
 
         .conteiner__sub-menulia {
-          display: flex;
-          justify-content: space-between;
-          padding: 28px 20px;
-          margin: 0 20px;
+          padding: 23px 14px;
+          margin: 0 14px;
           text-decoration: none;
           color: black;
+          font-size: 13px;
         }
 
         .conteiner__submenu02 {
-          padding: 12px;
           visibility: hidden;
-          transition: opacity 0.4s;
-          border-left: 1px solid #cecece;
           position: absolute;
           left: 180px;
           height: auto;
           top: 0;
-          height: 100%;
           width: 100%;
           opacity: 0;
           transition: opacity 0.4s linear;
 
           .conteiner__separator {
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
             float: left;
-            padding: 0px 15px;
-            margin: 0 25px;
+            padding: 17px 0px;
+            margin: 0 50px;
 
             .conteiner__separator-title {
-              font-weight: bold;
-              padding: 7px 15px;
+              font-weight: 700;
+              padding: 0px 6px;
               text-transform: uppercase;
               color: #888;
               font-size: 14px;
+              margin: 0 9px;
             }
 
             .conteiner__submenuli02 {
               display: flex;
 
               a {
-                padding: 7px 15px;
+                padding: 0px 16px;
                 text-decoration: none;
                 color: black;
-                font-size: 14px;
+                font-size: 13px;
                 margin-top: 6px;
               }
 
@@ -111,7 +141,7 @@ header {
                 text-decoration: underline;
                 font-weight: 700;
                 padding: 0;
-                margin: 6px 15px;
+                margin: 5px 15px;
               }
             }
           }
@@ -130,13 +160,9 @@ header {
   }
 
   .conteiner__loja:not(:hover) > .conteiner__sub-menu {
-    position: absolute;
-      visibility: hidden;
-      width: 100%;
       opacity: 0;
-      background-color: #fff;
       transition: 0.2s ease-out;
-      border-bottom: 1px solid #cecece;
+      transition-delay: 0.2s;
   }
   
 }

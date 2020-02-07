@@ -1,0 +1,129 @@
+.conteiner__loja {
+    height: 70px
+}
+
+.conteiner__loja .conteiner__open-market {
+    padding: 10px;
+    font-size: 14px;
+    margin: 0 10px;
+    line-height: 70px
+}
+
+.conteiner__loja .conteiner__open-market::before {
+    content: "";
+    background-image: url(https://lojalivreeleve.vteximg.com.br/arquivos/shopping-bag-2.svg);
+    background-size: cover;
+    background-position: center;
+    height: 12px;
+    width: 11px;
+    top: 28px;
+    left: 6px;
+    position: absolute
+}
+
+.conteiner__loja .conteiner__sub-menu {
+    position: fixed;
+    visibility: hidden;
+    width: 100%;
+    opacity: 0;
+    top: 70px;
+    background-color: #fff;
+    -webkit-transition: opacity .2s ease-out;
+    transition: opacity .2s ease-out;
+    border-bottom: 1px solid #cecece;
+    border-top: 1px solid #e4e4e4;
+    margin: 0
+}
+
+.conteiner__loja .conteiner__sub-menu .conteiner__sub-menuli {
+    display: -webkit-box;
+    display: flex
+}
+
+.conteiner__loja .conteiner__sub-menu .conteiner__sub-menuli .conteiner__sub-menulia {
+    padding: 21px 14px;
+    margin: 0 14px;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px
+}
+
+.conteiner__loja .conteiner__sub-menu .conteiner__sub-menuli .conteiner__submenu02 {
+    visibility: hidden;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s;
+    position: absolute;
+    left: 180px;
+    height: auto;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .4s linear;
+    transition: opacity .4s linear
+}
+
+.conteiner__loja .conteiner__sub-menu .conteiner__sub-menuli .conteiner__submenu02 .conteiner__separator {
+    float: left;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 6px 20px;
+    -webkit-box-align: start;
+    align-items: start;
+    margin: 0 50px;
+    padding: 17px 0
+}
+
+.conteiner__loja .conteiner__sub-menu .conteiner__sub-menuli .conteiner__submenu02 .conteiner__separator .conteiner__separator-title {
+    font-weight: 700;
+    padding: 0 6px;
+    text-transform: uppercase;
+    color: #888;
+    font-size: 14px;
+    margin: 0 9px
+}
+
+.conteiner__loja .conteiner__sub-menu .conteiner__sub-menuli .conteiner__submenu02 .conteiner__separator .conteiner__submenuli02 {
+    display: -webkit-box;
+    display: flex
+}
+
+.conteiner__loja .conteiner__sub-menu .conteiner__sub-menuli .conteiner__submenu02 .conteiner__separator .conteiner__submenuli02 a {
+    padding: 0 16px;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    margin-top: 6px
+}
+
+.conteiner__loja .conteiner__sub-menu .conteiner__sub-menuli .conteiner__submenu02 .conteiner__separator .conteiner__submenuli02 a:hover {
+    text-decoration: underline
+}
+
+.conteiner__loja .conteiner__sub-menu .conteiner__sub-menuli .conteiner__submenu02 .conteiner__separator .conteiner__submenuli02 .coteiner__tudo {
+    text-decoration: underline;
+    font-weight: 700;
+    padding: 0;
+    margin: 6px 15px
+}
+
+.conteiner__loja .conteiner__sub-menu .conteiner__sub-menuli:hover>.conteiner__submenu02 {
+    opacity: 1;
+    visibility: visible
+}
+
+.conteiner__loja:hover>.conteiner__sub-menu {
+    visibility: visible;
+    opacity: 1
+}
+
+.conteiner__loja:not(:hover)>.conteiner__sub-menu {
+    opacity: 0;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out
+}
