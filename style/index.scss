@@ -4,9 +4,6 @@
     overflow: hidden !important;
   }
 
-  li {
-    list-style: none;
-  }
   .Mconteiner__menu {
     .Mconteiner__loja {
       display: flex;
@@ -59,6 +56,7 @@
         }
       }
       .Mconteiner__sub-menuli {
+        list-style: none;
         .Mconteiner__sub-menulia {
           display: flex;
           justify-content: center;
@@ -88,6 +86,7 @@
         .Mconteiner__submenuli02 {
           padding: 10px 0;
           font-size: 13px;
+          list-style: none;
           a {
             text-decoration: none;
             color: #565050;

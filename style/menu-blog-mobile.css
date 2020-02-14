@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.conteiner__header {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #e4e4e4; }
+  .conteiner__header .Mcontainer__overlay {
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+    transform: translateX(-101%);
+    transition: 0.2s ease-in;
+    z-index: -1; }
+  .conteiner__header .Mcontainer__overlay-focus {
+    visibility: visible;
+    transform: translateX(0); }
+  .conteiner__header .Mscroll__locked {
+    overflow: hidden !important; }
+  .conteiner__header li {
+    list-style: none; }
+  .conteiner__header .Mconteiner__menu .Mconteiner__loja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: arial;
+    margin-right: 10px; }
+    .conteiner__header .Mconteiner__menu .Mconteiner__loja a {
+      text-decoration: none;
+      color: #565050; }
+    .conteiner__header .Mconteiner__menu .Mconteiner__loja .mkdf-icon-font-awesome.fa.fa-shopping-bag {
+      color: #8e8e8e;
+      font-size: 20px; }
+    .conteiner__header .Mconteiner__menu .Mconteiner__loja .mkdf-icon-font-awesome.fa.fa-times-circle {
+      color: #8e8e8e;
+      font-size: 20px; }
+    .conteiner__header .Mconteiner__menu .Mconteiner__loja .Mconteiner__sub-menu {
+      background: #fff;
+      padding: 0;
+      height: 100vh;
+      position: absolute;
+      top: 39px;
+      width: 290px;
+      right: 0;
+      -webkit-transform: translateX(101%);
+      transform: translateX(101%);
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      position: fixed;
+      top: 60px;
+      overflow-y: auto;
+      border-left: 1px solid #e4e4e4; }
+    .conteiner__header .Mconteiner__menu .Mconteiner__loja .Mconteiner__sub-menu--active {
+      transform: translateX(0%) !important; }
+    .conteiner__header .Mconteiner__menu .Mconteiner__loja .Mconteiner__close-loja {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      padding: 17px 0;
+      border-bottom: 1px solid #e4e4e4; }
+      .conteiner__header .Mconteiner__menu .Mconteiner__loja .Mconteiner__close-loja .Mconteiner__close-loja2 {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 10px;
+        padding: 0 10px;
+        color: red;
+        font-weight: bold;
+        font-size: 16px;
+        width: 25px;
+        cursor: pointer; }
+    .conteiner__header .Mconteiner__menu .Mconteiner__loja .Mconteiner__sub-menuli .conteiner__close-mobile-menu {
+      position: absolute;
+      width: 14px;
+      height: auto;
+      right: 0;
+      margin: -36px 10px;
+      transition: 0.2s;
+      transform: rotate(0);
+      z-index: -200; }
+    .conteiner__header .Mconteiner__menu .Mconteiner__loja .Mconteiner__sub-menuli .conteiner__open-mobile-menu {
+      transform: rotate(90deg); }
+    .conteiner__header .Mconteiner__menu .Mconteiner__loja .Mconteiner__sub-menuli .Mconteiner__sub-menulia {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+      align-items: center;
+      padding: 17px 17px;
+      font-size: 13px;
+      text-align: center;
+      border-bottom: 1px solid #e4e4e4;
+      text-decoration: none;
+      color: #565050; }
+    .conteiner__header .Mconteiner__menu .Mconteiner__loja .Mconteiner__sub-menuli .Mconteiner__submenu02 {
+      display: none;
+      padding: 0;
+      text-align: start; }
+    .conteiner__header .Mconteiner__menu .Mconteiner__loja .Mconteiner__sub-menuli .Mconteiner__separator-title {
+      display: block;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 0px 13px;
+      background-color: #e4e4e4; }
+    .conteiner__header .Mconteiner__menu .Mconteiner__loja .Mconteiner__sub-menuli .Mconteiner__submenuli02 {
+      padding: 10px 10px; }
+      .conteiner__header .Mconteiner__menu .Mconteiner__loja .Mconteiner__sub-menuli .Mconteiner__submenuli02 a {
+        text-decoration: none;
+        color: #565050;
+        font-size: 13px; }
+
+/*# sourceMappingURL=menu-blog-mobile.css.map */

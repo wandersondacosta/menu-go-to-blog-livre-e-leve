@@ -64,10 +64,10 @@ header {
       background-image: url(https://lojalivreeleve.vteximg.com.br/arquivos/shopping-bag-2.svg);
       background-size: cover;
       background-position: center;
-      height: 12px;
-      width: 11px;
-      top: 28px;
-      left: 6px;
+      height: 20px;
+      width: 20px;
+      top: 24px;
+      left: 18px;
       position: absolute;
     }
 
@@ -107,11 +107,12 @@ header {
           .conteiner__separator {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: stretch;
             align-items: flex-start;
             float: left;
             padding: 17px 0px;
             margin: 0 50px;
+            height: 290px;
 
             .conteiner__separator-title {
               font-weight: 700;
